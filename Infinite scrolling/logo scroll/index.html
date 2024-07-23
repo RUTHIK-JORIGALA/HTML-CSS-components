@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding with Robby</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="logos">
+      <div class="logo-slide">
+        <img src="./logos/3m.svg" alt="">
+        <img src="./logos/barstool-store.svg" alt="">
+        <img src="./logos/budweiser.svg" alt="">
+        <img src="./logos/buzzfeed.svg" alt="">
+        <img src="./logos/forbes.svg" alt="">
+        <img src="./logos/macys.svg" alt="">
+        <img src="./logos/menshealth.svg" alt="">
+        <img src="./logos/mrbeast.svg" alt="">
+      </div>
+
+      <!-- Instead of duplicating the images you can do this using javascript, We can use either ways -->
+
+      <!-- <div class="logo-slide">
+        <img src="./logos/3m.svg" alt="">
+        <img src="./logos/barstool-store.svg" alt="">
+        <img src="./logos/budweiser.svg" alt="">
+        <img src="./logos/buzzfeed.svg" alt="">
+        <img src="./logos/forbes.svg" alt="">
+        <img src="./logos/macys.svg" alt="">
+        <img src="./logos/menshealth.svg" alt="">
+        <img src="./logos/mrbeast.svg" alt="">
+      </div> -->
+    </div>
+  </body>
+  <script>
+    var copy = document.querySelector(".logo-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy)
+  </script>
+</html>
